@@ -1,6 +1,6 @@
 # Site settings
-title: Liyao Blog
-SEOTitle: Liyao Blog
+title: Liyao (李姚)
+SEOTitle: Liyao
 #header-img: img/post-bg-desk.jpg
 email: liyaol@yeah.net
 description: "报君黄金台上意, 提携玉龙为君死"
@@ -85,8 +85,8 @@ kramdown:
 
 
 # Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+#featured-tags: true                     # 是否使用首页标签
+#featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 
 
