@@ -6,7 +6,7 @@ layout: default
 <!--
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
 -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}')">
+<header class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -204,7 +204,7 @@ layout: default
 			    <p>✉️: {{site.email}}</p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p> style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
+			    <p style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
                         {% endif %}
 			{% if site.github_username %}
 			    <p>Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
