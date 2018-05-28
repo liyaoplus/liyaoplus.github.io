@@ -1,11 +1,10 @@
 # Site settings
-title: Liyao (李姚)
+#title: Liyao (李姚)
 SEOTitle: Liyao
 #header-img: img/post-bg-desk.jpg
-email: liyaol@yeah.net
-mobile: 131-6256-6039
-#description: "TO BE FILLED"
-keyword: "Liyao, 李姚"
+
+description: "穷则坚守底线, 达则心怀感恩"
+#keyword: "Liyao, 李姚"
 url: "https://liyaoplus.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 #github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
@@ -19,11 +18,13 @@ sidebar-avatar: /img/avatar-liyao-1.jpg      # use absolute URL, seeing it's use
 
 # SNS settings
 RSS: false
+email: liyaol@yeah.net
+address:    上海市闵行区东川路800号上海交通大学
 # weibo_username:     qiubaiying
 #zhihu_username:     qiubaiying
-github_username:    liyaoplus
+cv_filename:        cv-Liyao.pdf
 mobile_username:    131-6256-6039
-address_username:    上海市闵行区东川路800号上海交通大学
+github_username:    liyaoplus
 #facebook_username:  baiying.qiu.7
 #jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
