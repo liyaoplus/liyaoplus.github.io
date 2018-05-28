@@ -112,6 +112,18 @@ layout: default
                         {% endif %}
                         <!-- SNS Link -->
                         <ul class="list-inline">
+			    <!-- add CV add target = "_blank" to <a> by Liyao -->
+                            {% if site.cv_filename %}
+                            <li>
+                                <a target="_blank" href="https://github.com/liyaoplus/{{ site.cv_filename }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-cv fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+			
                             {% if site.RSS %}
                             <li>
                                 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -187,6 +199,9 @@ layout: default
                         </ul>
                         {% if site.email %}
                             <p>✉️ {{site.email}}</p>
+                        {% endif %}
+			{% if site.address %}
+                            <p>⛪ {{site.address}}</p>
                         {% endif %}
                     </div>
                 </section>
