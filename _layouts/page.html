@@ -115,7 +115,7 @@ layout: default
 			    <!-- add CV add target = "_blank" to <a> by Liyao -->
                             {% if site.cv_filename %}
                             <li>
-                                <a target="_blank" href="https://github.com/liyaoplus/{{ site.cv_filename }}">
+                                <a target="_blank" href="https://liyaoplus.github.io/{{ site.cv_filename }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-cv fa-stack-1x fa-inverse"></i>
@@ -198,10 +198,13 @@ layout: default
                             
                         </ul>
                         {% if site.email %}
-                            <p>✉️ {{site.email}}</p>
+			    <p>✉️:<br/>{{site.email}}</p>
+                        {% endif %}
+			{% if site.github_username %}
+			    <p>GitHub:<br/><a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
                         {% endif %}
 			{% if site.address %}
-                            <p>⛪ {{site.address}}</p>
+			    <p>⛪:<br />{{site.address}}</p>
                         {% endif %}
                     </div>
                 </section>
