@@ -11,7 +11,7 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <!--<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>-->
                     <!--<hr class="small">-->
                     <span class="subheading">{{ page.description }}</span>
                 </div>
@@ -204,7 +204,10 @@ layout: default
 			    <p>✉️: {{site.email}}</p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p>GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
+			    <p> style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
+                        {% endif %}
+			{% if site.github_username %}
+			    <p>Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
                         {% endif %}
 			{% if site.address %}
 			    <p>⛪:<br/>{{site.address}}</p>
