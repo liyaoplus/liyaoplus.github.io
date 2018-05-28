@@ -114,18 +114,21 @@ layout: default
                             <p>{{site.sidebar-about-description}}</p>
                         {% endif %}
                         <!-- SNS Link -->
-                        <ul class="list-inline">
-			    <!-- add CV add target = "_blank" to <a> by Liyao -->
-                            {% if site.cv_filename %}
-                            <li>
-                                <a target="_blank" href="https://liyaoplus.github.io/{{ site.cv_filename }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-cv fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}			
+			<h3>Contact Information</h3>
+                        {% if site.email %}
+			    <p style="color:black;">✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
+                        {% endif %}
+			{% if site.github_username %}
+			    <p style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
+                        {% endif %}
+			{% if site.github_username %}
+			    <p>Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
+                        {% endif %}
+			{% if site.address %}
+			    <p>⛪:<br/>{{site.address}}</p>
+                        {% endif %}
+			
+                        <ul class="list-inline">			    		
                             {% if site.RSS %}
                             <li>
                                 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -198,20 +201,7 @@ layout: default
                             </li>
                             {% endif %}                            
                         </ul>
-			
-			<h5>Contact Information</h5>
-                        {% if site.email %}
-			    <p>✉️: {{site.email}}</p>
-                        {% endif %}
-			{% if site.github_username %}
-			    <p style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
-                        {% endif %}
-			{% if site.github_username %}
-			    <p>Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
-                        {% endif %}
-			{% if site.address %}
-			    <p>⛪:<br/>{{site.address}}</p>
-                        {% endif %}
+						
                     </div>
                 </section>
                 <!-- Friends Blog -->
