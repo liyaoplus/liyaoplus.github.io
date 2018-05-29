@@ -9,7 +9,7 @@ layout: default
 <header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+            <div class="col-lg-8 col-lg-offset-2 col-md-5 col-md-offset-1 ">
                 <div class="site-heading">
                     <!--<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>-->
                     <!--<hr class="small">-->
@@ -114,7 +114,7 @@ layout: default
                             <p>{{site.sidebar-about-description}}</p>
                         {% endif %}
                         <!-- SNS Link -->
-			<h3>Contact Information</h3>
+			<h4>Contact Information</h4>
                         {% if site.email %}
 			    <p style="color:black;">✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
                         {% endif %}
@@ -122,12 +122,13 @@ layout: default
 			    <p style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p>Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
+			    <p style="color:black;">Curriculum Vitae (CV): <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">liyao</a></p>
                         {% endif %}
 			{% if site.address %}
 			    <p>⛪:<br/>{{site.address}}</p>
                         {% endif %}
 			
+			<!--
                         <ul class="list-inline">			    		
                             {% if site.RSS %}
                             <li>
@@ -201,7 +202,7 @@ layout: default
                             </li>
                             {% endif %}                            
                         </ul>
-						
+			-->
                     </div>
                 </section>
                 <!-- Friends Blog -->
