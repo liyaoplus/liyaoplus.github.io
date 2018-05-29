@@ -107,7 +107,8 @@ layout: default
                     <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
-                            <a href="{{ site.baseurl }}/about">
+                            <!--<a href="{{ site.baseurl }}/about">-->
+			    <a href="{{ site.url }}/{{site.sidebar-avatar}}">
                                 <img src="{{site.sidebar-avatar}}"/>
                             </a>
                         {% endif %}
@@ -118,9 +119,10 @@ layout: default
                 </section>
 		
 		<!-- Contack Information -->
-		<section>
-			<hr>
-			<h4 style="color:black;">Contact Information</h4>
+		<section  class="visible-md visible-lg">
+		    <hr>
+		    <h4 style="color:black;">Contact Information</h4>
+		    <div class="short-about">
                         {% if site.email %}
 			    <p style="color:black;">✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
                         {% endif %}
@@ -133,10 +135,11 @@ layout: default
 			{% if site.address %}
 			    <p style="font-size:10px;">⛪:<br/>{{site.address}}</p>
                         {% endif %}
-			<hr>		
+		    </div>
+		    <hr>	
 		</section>
-		<!--
 		<!-- SNS Link -->
+		<!--
 		<section>
 		    <div class="short-about">
                         <ul class="list-inline">			    		
