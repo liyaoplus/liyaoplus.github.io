@@ -114,7 +114,11 @@ layout: default
                         {% if site.sidebar-about-description %}
                             <p>{{site.sidebar-about-description}}</p>
                         {% endif %}
-                        <!-- SNS Link -->
+		    </div>
+                </section>
+		
+		<!-- Contack Information -->
+		<section>
 			<hr>
 			<h4 style="color:black;">Contact Information</h4>
                         {% if site.email %}
@@ -129,8 +133,12 @@ layout: default
 			{% if site.address %}
 			    <p style="font-size:10px;">⛪:<br/>{{site.address}}</p>
                         {% endif %}
-			<hr>
-			<!--
+			<hr>		
+		</section>
+		<!--
+		<!-- SNS Link -->
+		<section>
+		    <div class="short-about">
                         <ul class="list-inline">			    		
                             {% if site.RSS %}
                             <li>
@@ -202,10 +210,10 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}                            
-                        </ul>
-			-->
+                        </ul>		
                     </div>
                 </section>
+		-->
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
