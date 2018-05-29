@@ -104,7 +104,7 @@ layout: default
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
-                    <hr><h5 style="color:black;"><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <!--<a href="{{ site.baseurl }}/about">-->
@@ -124,16 +124,16 @@ layout: default
 		    <h5 style="color:gray;">CONTACT INFORM</h5>
 		    <div class="short-about">
                         {% if site.email %}
-			    <p style="color:black;">✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
+			    <p>✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p style="color:gray;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
+			    <p style="color:gray;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p style="color:black;font-size:16px;">CV: <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">Liyao</a></p>
+			    <p style="color:gray;">CV: <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">Liyao</a></p>
                         {% endif %}
 			{% if site.address %}
-			    <p style="font-size:8px;">⛪: {{site.address}}</p>
+			    <p style="font-size:6px;">⛪: {{site.address}}</p>
                         {% endif %}
 		    </div>
 		    <hr>	
