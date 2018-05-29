@@ -115,7 +115,8 @@ layout: default
                             <p>{{site.sidebar-about-description}}</p>
                         {% endif %}
                         <!-- SNS Link -->
-			<h4>Contact Information</h4>
+			<hr>
+			<h4 style="color:black;">Contact Information</h4>
                         {% if site.email %}
 			    <p style="color:black;">✉️: <a href="mailto:{{site.email}}">{{site.email}}</a></p>
                         {% endif %}
@@ -123,12 +124,12 @@ layout: default
 			    <p style="color:black;font-size:16px;">GitHub: <a href="https://github.com/{{site.github_username}}">liyaoplus</a></p>
                         {% endif %}
 			{% if site.github_username %}
-			    <p style="color:black;font-size:16px">CV: <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">Liyao</a></p>
+			    <p style="color:black;font-size:16px;">CV: <a href="https://liyaoplus.github.io/{{ site.cv_filename }}">Liyao</a></p>
                         {% endif %}
 			{% if site.address %}
-			    <p>⛪:<br/>{{site.address}}</p>
+			    <p style="font-size:10px;">⛪:<br/>{{site.address}}</p>
                         {% endif %}
-			
+			<hr>
 			<!--
                         <ul class="list-inline">			    		
                             {% if site.RSS %}
