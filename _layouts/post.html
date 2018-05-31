@@ -168,7 +168,28 @@ layout: default
     </div>
 </article>
 
-
+<!-- Add to support MathJax -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+    },
+    TeX: {
+        equationNumbers: {
+	    autoNumber: ["none"],
+	    useLabelIds: true
+	}
+    },
+    "HTML-CSS": {
+    	linebreaks: {automatic: true}
+    },
+     SVG: {
+         linebreaks: {automatic: true}
+    }
+});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 
 {% if site.disqus_username %}
