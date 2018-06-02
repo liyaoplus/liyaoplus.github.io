@@ -36,7 +36,7 @@ This project is an immature framework designed for doing High Frequency Trading 
 
 ## Build
 - Build *all*: make *all*
-- Build *<cpp_filename>*: make *<cpp_filename>*
+- Build *\<cpp_filename\>*: make *\<cpp_filename\>*
 - Clean: make *clean*
 
 ## Usage
