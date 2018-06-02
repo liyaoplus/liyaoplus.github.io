@@ -170,6 +170,15 @@ layout: default
 
 <!-- Add to support MathJax -->
 <script type="text/x-mathjax-config">
+  //
+  //  The document is hidden until MathJax is finished, then
+  //   this function runs, making it visible again.
+  //
+  MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+</script>
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -177,19 +186,16 @@ MathJax.Hub.Config({
     },
     TeX: {
         equationNumbers: {
-	    autoNumber: ["none"],
+	    <!--autoNumber: ["none"],-->
 	    useLabelIds: true
 	}
     },
     "HTML-CSS": {
     	linebreaks: {automatic: true}
-    },
-     SVG: {
-         linebreaks: {automatic: true}
     }
 });
 </script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
 
 {% if site.disqus_username %}
