@@ -31,7 +31,7 @@ This project is an immature framework designed for doing High Frequency Trading 
 - Using **epoll** for quick network response
 - Using STL's **\<mutex\>** to handle data race
 - In savedMarketData directory: simulated stock prices
-- Congiguration (example: port definition): in Basics.h
+- Configuration (example: port definition): in Basics.h
 - Some functions to be completed
 
 ## Build
